@@ -40,9 +40,16 @@ if selected == "Home":
 
     hobby_title_font = f"<p style='font-size:20px;'>🥾 Bushwalker</p>"
     st.markdown(hobby_title_font, unsafe_allow_html=True)      
-    st.markdown(hobby_intro)
-    
-if selected == "Projects":
+    st.markdown(hobby_intro) 
+
+if selected == "Data Analysis":
     st.title(f"{selected}")
+    col1, col2 = st.columns([1, 3])
+    col1.image('https://i.postimg.cc/bwrPBzKD/Birds-in-Backyards-1.png')
+    col1.subheader("Birds in Backyards - Data visualization")
+    col2.text('')
+if selected == "Data Engineering":
+    st.title(f"{selected}")
+    st.image('https://i.postimg.cc/bwrPBzKD/Birds-in-Backyards-1.png')    
 if selected == "Contact":
     st.title(f"{selected}")
